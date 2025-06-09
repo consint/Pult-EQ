@@ -1,0 +1,238 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Processor Type="SynthChain" ID="pulteq" Bypassed="0" Gain="1.0" Balance="0.0"
+           VoiceLimit="64.0" KillFadeTime="20.0" IconColour="0" packageName=""
+           BuildVersion="650">
+  <ChildProcessors>
+    <Processor Type="MidiProcessorChain" ID="Midi Processor" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="ScriptProcessor" ID="Interface" Bypassed="0">
+          <ChildProcessors/>
+          <Content>
+            <Control type="ScriptButton" id="btnBypass" value="1.0"/>
+            <Control type="ScriptButton" id="btnSettings" value="0.0"/>
+            <Control type="ScriptButton" id="btnLogo" value="0.0"/>
+            <Control type="ScriptComboBox" id="cmbOS" value="1.0"/>
+            <Control type="ScriptSlider" id="knbIn" value="0.0"/>
+            <Control type="ScriptSlider" id="knbStereo" value="1"/>
+            <Control type="ScriptButton" id="btnStereo0" value="0.0"/>
+            <Control type="ScriptButton" id="btnStereo1" value="0.0"/>
+            <Control type="ScriptButton" id="btnStereo2" value="0.0"/>
+            <Control type="ScriptButton" id="btnStereo3" value="0.0"/>
+            <Control type="ScriptSlider" id="knbDrive" value="3.0"/>
+            <Control type="ScriptSlider" id="knbOut" value="0.0"/>
+            <Control type="ScriptSlider" id="knbBoostLow" value="0.0"/>
+            <Control type="ScriptSlider" id="knbBandwidth" value="0.0"/>
+            <Control type="ScriptSlider" id="knbAttenLow" value="0.0"/>
+            <Control type="ScriptSlider" id="knbAttenHight" value="0.0"/>
+            <Control type="ScriptSlider" id="knbBoostHight" value="0.0"/>
+            <Control type="ScriptSlider" id="knbLowFreq" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLow0" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLow1" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLow2" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLow3" value="0.0"/>
+            <Control type="ScriptSlider" id="knbHightFreq" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHight0" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHight1" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHight2" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHight3" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHight4" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHight5" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHight6" value="0.0"/>
+            <Control type="ScriptSlider" id="knbAttenFreq" value="0.0"/>
+            <Control type="ScriptButton" id="btnGainHightAtten0" value="0.0"/>
+            <Control type="ScriptButton" id="btnGainHightAtten1" value="0.0"/>
+            <Control type="ScriptButton" id="btnGainHightAtten2" value="0.0"/>
+            <Control type="ScriptSlider" id="knbBoostLowMid" value="0.0"/>
+            <Control type="ScriptSlider" id="knbBandwidthMid" value="0.0"/>
+            <Control type="ScriptSlider" id="knbAttenLowMid" value="0.0"/>
+            <Control type="ScriptSlider" id="knbAttenHightMid" value="0.0"/>
+            <Control type="ScriptSlider" id="knbBoostHightMid" value="0.0"/>
+            <Control type="ScriptSlider" id="knbLowFreqMid" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLowMid0" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLowMid1" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLowMid2" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLowMid3" value="0.0"/>
+            <Control type="ScriptSlider" id="knbHightFreqMid" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightMid0" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightMid1" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightMid2" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightMid3" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightMid4" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightMid5" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightMid6" value="0.0"/>
+            <Control type="ScriptSlider" id="knbAttenFreqMid" value="0.0"/>
+            <Control type="ScriptButton" id="btnGainHightAttenMid0" value="0.0"/>
+            <Control type="ScriptButton" id="btnGainHightAttenMid1" value="0.0"/>
+            <Control type="ScriptButton" id="btnGainHightAttenMid2" value="0.0"/>
+            <Control type="ScriptSlider" id="knbBoostLowSide" value="0.0"/>
+            <Control type="ScriptSlider" id="knbBandwidthSide" value="0.0"/>
+            <Control type="ScriptSlider" id="knbAttenLowSide" value="0.0"/>
+            <Control type="ScriptSlider" id="knbAttenHightSide" value="0.0"/>
+            <Control type="ScriptSlider" id="knbBoostHightSide" value="0.0"/>
+            <Control type="ScriptSlider" id="knbLowFreqSide" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLowSide0" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLowSide1" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLowSide2" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqLowSide3" value="0.0"/>
+            <Control type="ScriptSlider" id="knbHightFreqSide" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightSide0" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightSide1" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightSide2" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightSide3" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightSide4" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightSide5" value="0.0"/>
+            <Control type="ScriptButton" id="btnFreqHightSide6" value="0.0"/>
+            <Control type="ScriptSlider" id="knbAttenFreqSide" value="0.0"/>
+            <Control type="ScriptButton" id="btnGainHightAttenSide0" value="0.0"/>
+            <Control type="ScriptButton" id="btnGainHightAttenSide1" value="0.0"/>
+            <Control type="ScriptButton" id="btnGainHightAttenSide2" value="0.0"/>
+            <Control type="ScriptComboBox" id="cmbSettingsFilter" value="2.0"/>
+            <Control type="ScriptButton" id="btnLinkWebsite" value="0.0"/>
+            <Control type="ScriptButton" id="btnLinkGitHub" value="0.0"/>
+            <Control type="ScriptButton" id="btnLinkKofi" value="0.0"/>
+            <Control type="ScriptComboBox" id="cmbZoom" value="3.0"/>
+          </Content>
+          <UIData Source="pulteqUIData"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="GainModulation" Bypassed="0" Intensity="1.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="ModulatorChain" ID="PitchModulation" Bypassed="1" Intensity="0.0">
+      <ChildProcessors/>
+    </Processor>
+    <Processor Type="EffectChain" ID="FX" Bypassed="0">
+      <ChildProcessors>
+        <Processor Type="SimpleGain" ID="GainIn" Bypassed="0" Gain="0.0" Delay="0.0"
+                   Width="100.0" Balance="0.0" InvertPolarity="0.0">
+          <ChildProcessors>
+            <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Width Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Pan Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+        <Processor Type="Hardcoded Master FX" ID="hmfxPultStereo" Bypassed="0" Network="pultstereo"
+                   BoostLow="0.0" AttenLow="0.0" CPSLow="0.0" Adjust="0.0" BoostHi="0.0"
+                   AttenHi="0.0" CPSHi="0.0" HiCutF="2.0">
+          <ChildProcessors>
+            <Processor Type="ModulatorChain" ID="P1 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P2 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P3 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P4 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P5 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P6 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+        <Processor Type="Hardcoded Master FX" ID="hmfxPultMidSide" Bypassed="1"
+                   Network="pultmidside" midBoostLow="0.0" midAttenLow="0.0" midCPSLow="0.0"
+                   midAdjust="0.0" midBoostHi="0.0" midAttenHi="0.0" midCPSHi="0.0"
+                   midHiCutF="2.0" sideBoostLow="0.0" sideAttenLow="0.0" sideCPSLow="0.0"
+                   sideAdjust="0.0" sideBoostHi="0.0" sideAttenHi="0.0" sideCPSHi="0.0"
+                   sideHiCutF="2.0">
+          <ChildProcessors>
+            <Processor Type="ModulatorChain" ID="P1 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P2 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P3 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P4 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P5 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P6 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+        <Processor Type="Hardcoded Master FX" ID="hmfxSaturation" Bypassed="0" Network="saturation"
+                   Oversampling="0.0" Tube="0.2000000029802322" Gain="-0.1500000059604645"
+                   Filter="1.0">
+          <ChildProcessors>
+            <Processor Type="ModulatorChain" ID="P1 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P2 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P3 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P4 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P5 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="P6 Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+        <Processor Type="SimpleGain" ID="GainOut" Bypassed="0" Gain="0.0" Delay="0.0"
+                   Width="100.0" Balance="0.0" InvertPolarity="0.0">
+          <ChildProcessors>
+            <Processor Type="ModulatorChain" ID="Gain Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Delay Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Width Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+            <Processor Type="ModulatorChain" ID="Pan Modulation" Bypassed="0" Intensity="1.0">
+              <ChildProcessors/>
+            </Processor>
+          </ChildProcessors>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+      </ChildProcessors>
+    </Processor>
+  </ChildProcessors>
+  <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+  <macro_controls>
+    <macro name="Macro 1" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 2" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 3" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 4" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 5" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 6" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 7" value="0.0" midi_cc="-1"/>
+    <macro name="Macro 8" value="0.0" midi_cc="-1"/>
+  </macro_controls>
+  <MidiAutomation/>
+  <MPEData Enabled="0"/>
+</Processor>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="saturation" Version="0.0.0" AllowCompilation="1">
+  <Node FactoryPath="container.chain" ID="saturation" Bypassed="0" Name="saturation"
+        ShowParameters="1">
+    <Nodes>
+      <Node ID="oversample" FactoryPath="container.oversample" Bypassed="0"
+            Name="oversample" ShowParameters="1">
+        <Nodes>
+          <Node ID="Tube2" FactoryPath="project.Tube2" Bypassed="0" Name="Tube2">
+            <Parameters>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Input" Value="0.5"/>
+              <Parameter MinValue="0.0" MaxValue="1.0" ID="Tube" DefaultValue="0.5" Automated="1"/>
+            </Parameters>
+          </Node>
+          <Node ID="gain" FactoryPath="core.gain" Bypassed="0" Name="gain">
+            <Parameters>
+              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                         SkewFactor="5.422270774841309" ID="Gain" Automated="1"/>
+              <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                         SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+              <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                         SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+            </Parameters>
+          </Node>
+        </Nodes>
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="4.0" StepSize="1.0" ID="Oversampling"
+                     DefaultValue="1.0" Automated="1"/>
+          <Parameter MinValue="0.0" MaxValue="1.0" StepSize="1.0" ID="FilterType"
+                     DefaultValue="0.0" Automated="1"/>
+        </Parameters>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="Oversampling" MinValue="0.0" MaxValue="4.0" StepSize="1.0"
+                 Value="0.0" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="oversample" ParameterId="Oversampling"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="Tube" MinValue="0.0" MaxValue="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="Tube2" ParameterId="Tube"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="Gain" MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                 SkewFactor="5.422270774841309" Value="0.0" DefaultValue="1.0">
+        <Connections>
+          <Connection NodeId="gain" ParameterId="Gain"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="Filter" MinValue="0.0" MaxValue="1.0" StepSize="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="oversample" ParameterId="FilterType"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>

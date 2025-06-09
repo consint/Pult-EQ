@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ContentProperties DeviceType="Desktop">
+  <Component type="ScriptPanel" id="pnlBackground" x="0.0" y="0.0" width="640.0"
+             height="330.0" locked="1" borderSize="0.0" borderRadius="0.0"
+             textColour="4290627282" itemColour2="4283459976" itemColour="4279378220"
+             bgColour="4281094508">
+    <Component type="ScriptPanel" id="pnlHeader" x="0.0" y="0.0" width="640.0"
+               parentComponent="pnlBackground" borderSize="0.0" borderRadius="0.0"
+               textColour="15131611" bgColour="0" itemColour="1447446" itemColour2="1447446"
+               height="50.0">
+      <Component type="ScriptButton" id="btnBypass" x="607.0" y="18.0" parentComponent="pnlHeader"
+                 text="BYPASS" width="14.0" height="14.0" textColour="4284772207"
+                 itemColour2="4293321691" itemColour="4284772207"/>
+      <Component type="ScriptButton" id="btnSettings" x="570.0" y="19.0" parentComponent="pnlHeader"
+                 text="Settings" width="15.0" height="14.0" itemColour2="4293321691"
+                 itemColour="4284772207" textColour="4284772207"/>
+      <Component type="ScriptButton" id="btnLogo" x="20.0" y="16.0" parentComponent="pnlHeader"
+                 width="27.0" height="18.0" isMomentary="1"/>
+    </Component>
+    <Component type="ScriptPanel" id="pnlGeneral" x="0.0" y="50.0" width="640.0"
+               height="60.0" borderSize="0.0" borderRadius="0.0" parentComponent="pnlBackground"
+               itemColour="2840201" itemColour2="2840201" textColour="16777215"
+               bgColour="16777215">
+      <Component type="ScriptComboBox" id="cmbOS" x="470.0" y="18.0" max="5" width="50.0"
+                 height="25.0" items="Off&#10;2x&#10;4x&#10;8x&#10;16x&#10;" bgColour="4278218239"
+                 parentComponent="pnlGeneral" itemColour2="4227792896"/>
+      <Component type="ScriptSlider" id="knbIn" x="10.0" y="10.0" width="100.0"
+                 height="40.0" text="In" parentComponent="pnlGeneral" min="-25.0"
+                 max="25.0" isPluginParameter="1" pluginParameterName="In" processorId="GainIn"
+                 parameterId="Gain"/>
+      <Component type="ScriptSlider" id="knbStereo" x="150.0" y="18.0" parentComponent="pnlGeneral"
+                 height="25.0" max="3.0" stepSize="1.0" isPluginParameter="1"
+                 pluginParameterName="Stereo/Mid/Side" width="163.0" defaultValue="1.0"/>
+      <Component type="ScriptButton" id="btnStereo0" x="150.0" y="18.0" text="Radio-Stereo"
+                 width="35.0" height="25.0" parentComponent="pnlGeneral" defaultValue="1.0"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnStereo1" x="185.0" y="18.0" text="Radio-Mid"
+                 width="51.0" height="25.0" parentComponent="pnlGeneral" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnStereo2" x="236.0" y="18.0" text="Radio-Side"
+                 width="37.0" height="25.0" parentComponent="pnlGeneral" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnStereo3" x="273.0" y="18.0" text="Radio-Side"
+                 width="40.0" height="25.0" parentComponent="pnlGeneral" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptSlider" id="knbDrive" x="340.0" y="10.0" width="80.0"
+                 height="40.0" text="Drive" defaultValue="3.0" parentComponent="pnlGeneral"
+                 isPluginParameter="1" pluginParameterName="Drive" stepSize="1.0"
+                 max="10.0"/>
+      <Component type="ScriptSlider" id="knbOut" x="545.0" y="10.0" width="90.0"
+                 height="40.0" text="Out" parentComponent="pnlGeneral" min="-25.0"
+                 max="25.0" processorId="GainOut" parameterId="Gain" isPluginParameter="1"
+                 pluginParameterName="Out"/>
+    </Component>
+    <Component type="ScriptPanel" id="pnlMain" x="20.0" y="117.0" width="600.0"
+               height="180.0" borderSize="0.0" borderRadius="0.0" itemColour="2840201"
+               itemColour2="4095689" textColour="16777215" bgColour="16777215"
+               parentComponent="pnlBackground">
+      <Component type="ScriptSlider" id="knbBoostLow" x="10.0" y="10.0" parentComponent="pnlMain"
+                 text="Boost" width="70.0" height="100.0" max="10.0" scaleFactor="0.5"
+                 isPluginParameter="1" pluginParameterName="Low Boost" bgColour="4281940281"/>
+      <Component type="ScriptSlider" id="knbBandwidth" x="362.0" y="10.0" parentComponent="pnlMain"
+                 text="Adjust" width="70.0" height="100.0" max="10.0" isPluginParameter="1"
+                 pluginParameterName="Hight Adjust"/>
+      <Component type="ScriptSlider" id="knbAttenLow" x="110.0" y="10.0" parentComponent="pnlMain"
+                 text="Atten" width="70.0" height="100.0" max="10.0" isPluginParameter="1"
+                 pluginParameterName="Low Atten"/>
+      <Component type="ScriptSlider" id="knbAttenHight" x="510.0" y="10.0" parentComponent="pnlMain"
+                 text="Atten" width="70.0" height="100.0" max="10.0" pluginParameterName="Hight Atten"
+                 isPluginParameter="1"/>
+      <Component type="ScriptSlider" id="knbBoostHight" x="252.0" y="10.0" parentComponent="pnlMain"
+                 text="Boost" width="70.0" height="100.0" max="10.0" isPluginParameter="1"
+                 pluginParameterName="Hight Boost"/>
+      <Component type="ScriptSlider" id="knbLowFreq" x="32.0" y="130.0" width="127.0"
+                 height="25.0" max="3.0" stepSize="1.0" parentComponent="pnlMain"
+                 macroControl="No MacroControl" processorId="hmfxPultStereo" parameterId="CPSLow"
+                 isPluginParameter="1" pluginParameterName="Low Frequency"/>
+      <Component type="ScriptButton" id="btnFreqLow0" x="32.0" y="130.0" text="Radio-20"
+                 width="30.0" height="25.0" parentComponent="pnlMain" defaultValue="1.0"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqLow1" x="62.0" y="130.0" text="Radio-30"
+                 width="30.0" height="25.0" parentComponent="pnlMain" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqLow2" x="92.0" y="130.0" text="Radio-60"
+                 width="30.0" height="25.0" parentComponent="pnlMain" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqLow3" x="122.0" y="130.0" text="Radio-100"
+                 width="37.0" height="25.0" parentComponent="pnlMain" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptSlider" id="knbHightFreq" x="237.0" y="130.0" parentComponent="pnlMain"
+                 width="210.0" height="25.0" max="6.0" stepSize="1.0" processorId="hmfxPultStereo"
+                 parameterId="CPSHi" isPluginParameter="1" pluginParameterName="Hight Frequency"/>
+      <Component type="ScriptButton" id="btnFreqHight0" x="237.0" y="130.0" width="30.0"
+                 height="25.0" text="Radio-3" parentComponent="pnlMain" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHight1" x="267.0" y="130.0" width="30.0"
+                 height="25.0" text="Radio-4" parentComponent="pnlMain" isMetaParameter="1"
+                 isMomentary="1"/>
+      <Component type="ScriptButton" id="btnFreqHight2" x="297.0" y="130.0" width="30.0"
+                 height="25.0" text="Radio-5" parentComponent="pnlMain" isMetaParameter="1"
+                 isMomentary="1"/>
+      <Component type="ScriptButton" id="btnFreqHight3" x="327.0" y="130.0" width="30.0"
+                 height="25.0" text="Radio-6" parentComponent="pnlMain" isMetaParameter="1"
+                 isMomentary="1"/>
+      <Component type="ScriptButton" id="btnFreqHight4" x="357.0" y="130.0" width="30.0"
+                 height="25.0" text="Radio-10" parentComponent="pnlMain" isMetaParameter="1"
+                 isMomentary="1"/>
+      <Component type="ScriptButton" id="btnFreqHight5" x="387.0" y="130.0" width="30.0"
+                 height="25.0" text="Radio-12" parentComponent="pnlMain" isMetaParameter="1"
+                 isMomentary="1"/>
+      <Component type="ScriptButton" id="btnFreqHight6" x="417.0" y="130.0" width="30.0"
+                 height="25.0" text="Radio-16" parentComponent="pnlMain" isMetaParameter="1"
+                 isMomentary="1"/>
+      <Component type="ScriptSlider" id="knbAttenFreq" x="500.0" y="130.0" parentComponent="pnlMain"
+                 width="92.0" height="25.0" max="2.0" stepSize="1.0" isPluginParameter="1"
+                 pluginParameterName="Atten Frequency"/>
+      <Component type="ScriptButton" id="btnGainHightAtten0" x="500.0" y="130.0"
+                 text="Radio-5" width="30.0" height="25.0" parentComponent="pnlMain"
+                 defaultValue="1.0" isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnGainHightAtten1" x="530.0" y="130.0"
+                 text="Radio-10" width="30.0" height="25.0" parentComponent="pnlMain"
+                 isMetaParameter="1" isMomentary="1"/>
+      <Component type="ScriptButton" id="btnGainHightAtten2" x="560.0" y="130.0"
+                 text="Radio-20" width="32.0" height="25.0" parentComponent="pnlMain"
+                 isMomentary="1" isMetaParameter="1"/>
+    </Component>
+    <Component type="ScriptPanel" id="pnlMainMid" x="20.0" y="117.0" width="600.0"
+               height="180.0" borderSize="0.0" borderRadius="0.0" itemColour="2840201"
+               itemColour2="4095689" textColour="16777215" bgColour="16777215"
+               parentComponent="pnlBackground" visible="0">
+      <Component type="ScriptSlider" id="knbBoostLowMid" x="10.0" y="10.0" parentComponent="pnlMainMid"
+                 text="Boost" width="70.0" height="100.0" max="10.0" scaleFactor="0.5"
+                 isPluginParameter="1" pluginParameterName="Mid Low Boost"/>
+      <Component type="ScriptSlider" id="knbBandwidthMid" x="362.0" y="10.0" parentComponent="pnlMainMid"
+                 text="Adjust" width="70.0" height="100.0" max="10.0" isPluginParameter="1"
+                 pluginParameterName="Mid Hight Adjust"/>
+      <Component type="ScriptSlider" id="knbAttenLowMid" x="110.0" y="10.0" parentComponent="pnlMainMid"
+                 text="Atten" width="70.0" height="100.0" max="10.0" pluginParameterName="Mid Low Atten"
+                 isPluginParameter="1"/>
+      <Component type="ScriptSlider" id="knbAttenHightMid" x="510.0" y="10.0"
+                 parentComponent="pnlMainMid" text="Atten" width="70.0" height="100.0"
+                 max="10.0" isPluginParameter="1" pluginParameterName="Mid Hight Atten"/>
+      <Component type="ScriptSlider" id="knbBoostHightMid" x="252.0" y="10.0"
+                 parentComponent="pnlMainMid" text="Boost" width="70.0" height="100.0"
+                 max="10.0" isPluginParameter="1" pluginParameterName="Mid Hight Boost"/>
+      <Component type="ScriptSlider" id="knbLowFreqMid" x="32.0" y="130.0" width="127.0"
+                 height="25.0" max="3.0" stepSize="1.0" parentComponent="pnlMainMid"
+                 macroControl="No MacroControl" processorId="hmfxPultMidSide"
+                 parameterId="midCPSLow" isPluginParameter="1" pluginParameterName="Mid Low Frequency"/>
+      <Component type="ScriptButton" id="btnFreqLowMid0" x="32.0" y="130.0" text="Radio-20"
+                 width="30.0" height="25.0" parentComponent="pnlMainMid" defaultValue="1.0"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqLowMid1" x="62.0" y="130.0" text="Radio-30"
+                 width="30.0" height="25.0" parentComponent="pnlMainMid" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqLowMid2" x="92.0" y="130.0" text="Radio-60"
+                 width="30.0" height="25.0" parentComponent="pnlMainMid" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqLowMid3" x="122.0" y="130.0" text="Radio-100"
+                 width="37.0" height="25.0" parentComponent="pnlMainMid" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptSlider" id="knbHightFreqMid" x="237.0" y="130.0"
+                 parentComponent="pnlMainMid" width="210.0" height="25.0" max="6.0"
+                 stepSize="1.0" processorId="hmfxPultMidSide" parameterId="midCPSHi"
+                 isPluginParameter="1" pluginParameterName="Mid Hight Frequency"/>
+      <Component type="ScriptButton" id="btnFreqHightMid0" x="237.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-3" parentComponent="pnlMainMid"
+                 defaultValue="1.0" isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightMid1" x="267.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-4" parentComponent="pnlMainMid"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightMid2" x="297.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-5" parentComponent="pnlMainMid"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightMid3" x="327.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-6" parentComponent="pnlMainMid"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightMid4" x="357.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-10" parentComponent="pnlMainMid"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightMid5" x="387.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-12" parentComponent="pnlMainMid"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightMid6" x="417.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-16" parentComponent="pnlMainMid"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptSlider" id="knbAttenFreqMid" x="500.0" y="130.0"
+                 parentComponent="pnlMainMid" width="92.0" height="25.0" max="2.0"
+                 stepSize="1.0" isPluginParameter="1" pluginParameterName="Mid Atten Frequency"/>
+      <Component type="ScriptButton" id="btnGainHightAttenMid0" x="500.0" y="130.0"
+                 text="Radio-5" width="30.0" height="25.0" parentComponent="pnlMainMid"
+                 defaultValue="1.0" isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnGainHightAttenMid1" x="530.0" y="130.0"
+                 text="Radio-10" width="30.0" height="25.0" parentComponent="pnlMainMid"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnGainHightAttenMid2" x="560.0" y="130.0"
+                 text="Radio-20" width="32.0" height="25.0" parentComponent="pnlMainMid"
+                 isMomentary="1" isMetaParameter="1"/>
+    </Component>
+    <Component type="ScriptPanel" id="pnlMainSide" x="20.0" y="117.0" width="600.0"
+               height="180.0" borderSize="0.0" borderRadius="0.0" itemColour="2840201"
+               itemColour2="4095689" textColour="16777215" bgColour="16777215"
+               parentComponent="pnlBackground" visible="0">
+      <Component type="ScriptSlider" id="knbBoostLowSide" x="10.0" y="10.0" parentComponent="pnlMainSide"
+                 text="Boost" width="70.0" height="100.0" max="10.0" scaleFactor="0.5"
+                 pluginParameterName="Side Low Boost" isPluginParameter="1"/>
+      <Component type="ScriptSlider" id="knbBandwidthSide" x="362.0" y="10.0"
+                 parentComponent="pnlMainSide" text="Adjust" width="70.0" height="100.0"
+                 max="10.0" isPluginParameter="1" pluginParameterName="Side Hight Adjust"/>
+      <Component type="ScriptSlider" id="knbAttenLowSide" x="110.0" y="10.0" parentComponent="pnlMainSide"
+                 text="Atten" width="70.0" height="100.0" max="10.0" isPluginParameter="1"
+                 pluginParameterName="Side Low Atten"/>
+      <Component type="ScriptSlider" id="knbAttenHightSide" x="510.0" y="10.0"
+                 parentComponent="pnlMainSide" text="Atten" width="70.0" height="100.0"
+                 max="10.0" isPluginParameter="1" pluginParameterName="Side Hight Atten"/>
+      <Component type="ScriptSlider" id="knbBoostHightSide" x="252.0" y="10.0"
+                 parentComponent="pnlMainSide" text="Boost" width="70.0" height="100.0"
+                 max="10.0" isPluginParameter="1" pluginParameterName="Side Hight Boost"/>
+      <Component type="ScriptSlider" id="knbLowFreqSide" x="32.0" y="130.0" width="127.0"
+                 height="25.0" max="3.0" stepSize="1.0" parentComponent="pnlMainSide"
+                 macroControl="No MacroControl" processorId="hmfxPultMidSide"
+                 parameterId="sideCPSLow" isPluginParameter="1" pluginParameterName="Side Low Frequency"/>
+      <Component type="ScriptButton" id="btnFreqLowSide0" x="32.0" y="130.0" text="Radio-20"
+                 width="30.0" height="25.0" parentComponent="pnlMainSide" defaultValue="1.0"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqLowSide1" x="62.0" y="130.0" text="Radio-30"
+                 width="30.0" height="25.0" parentComponent="pnlMainSide" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqLowSide2" x="92.0" y="130.0" text="Radio-60"
+                 width="30.0" height="25.0" parentComponent="pnlMainSide" isMomentary="1"
+                 isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqLowSide3" x="122.0" y="130.0"
+                 text="Radio-100" width="37.0" height="25.0" parentComponent="pnlMainSide"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptSlider" id="knbHightFreqSide" x="237.0" y="130.0"
+                 parentComponent="pnlMainSide" width="210.0" height="25.0" max="6.0"
+                 stepSize="1.0" processorId="hmfxPultMidSide" parameterId="sideCPSHi"
+                 isPluginParameter="1" pluginParameterName="Side Hight Frequency"/>
+      <Component type="ScriptButton" id="btnFreqHightSide0" x="237.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-3" parentComponent="pnlMainSide"
+                 defaultValue="1.0" isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightSide1" x="267.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-4" parentComponent="pnlMainSide"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightSide2" x="297.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-5" parentComponent="pnlMainSide"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightSide3" x="327.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-6" parentComponent="pnlMainSide"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightSide4" x="357.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-10" parentComponent="pnlMainSide"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightSide5" x="387.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-12" parentComponent="pnlMainSide"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnFreqHightSide6" x="417.0" y="130.0"
+                 width="30.0" height="25.0" text="Radio-16" parentComponent="pnlMainSide"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptSlider" id="knbAttenFreqSide" x="500.0" y="130.0"
+                 parentComponent="pnlMainSide" width="92.0" height="25.0" max="2.0"
+                 stepSize="1.0" isPluginParameter="1" pluginParameterName="Side Hight Atten Frequency"/>
+      <Component type="ScriptButton" id="btnGainHightAttenSide0" x="500.0" y="130.0"
+                 text="Radio-5" width="30.0" height="25.0" parentComponent="pnlMainSide"
+                 defaultValue="1.0" isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnGainHightAttenSide1" x="530.0" y="130.0"
+                 text="Radio-10" width="30.0" height="25.0" parentComponent="pnlMainSide"
+                 isMomentary="1" isMetaParameter="1"/>
+      <Component type="ScriptButton" id="btnGainHightAttenSide2" x="560.0" y="130.0"
+                 text="Radio-20" width="32.0" height="25.0" parentComponent="pnlMainSide"
+                 isMomentary="1" isMetaParameter="1"/>
+    </Component>
+  </Component>
+  <Component type="ScriptPanel" id="pnlFreqOverlay" x="10.0" y="240.0" width="620.0"
+             height="70.0" bgColour="16777215" itemColour="0" itemColour2="0"
+             textColour="16777215" borderSize="0.0" borderRadius="0.0" visible="0"/>
+  <Component type="ScriptPanel" id="pnlSettings" x="0.0" y="50.0" width="640.0"
+             height="280.0" visible="0.0">
+    <Component type="ScriptComboBox" id="cmbSettingsFilter" x="260.0" y="95.0"
+               max="2" parentComponent="pnlSettings" width="200.0" height="25.0"
+               items="Polyphase (Low Latency)&#10;FIR (Low Phase Distortion)"
+               defaultValue="2.0" fontName="Roboto-Medium"/>
+    <Component type="ScriptPanel" id="pnlSettingsOSFilter" x="115.0" y="95.0"
+               parentComponent="pnlSettings" width="130.0" height="25.0" text="Oversampling Filter"/>
+    <Component type="ScriptPanel" id="pnlSettingsAbout" x="55.0" y="180.0" parentComponent="pnlSettings"
+               width="400.0" height="70.0">
+      <Component type="ScriptButton" id="btnLinkWebsite" x="280.0" y="4.0" parentComponent="pnlSettingsAbout"
+                 text="www.consint.net" isMomentary="1" width="120.0" height="20.0"/>
+      <Component type="ScriptButton" id="btnLinkGitHub" x="280.0" y="45.0" parentComponent="pnlSettingsAbout"
+                 text="github.com/consint" isMomentary="1" width="120.0" height="20.0"/>
+      <Component type="ScriptButton" id="btnLinkKofi" x="280.0" y="25.0" parentComponent="pnlSettingsAbout"
+                 text="ko-fi.com/consint" isMomentary="1" width="120.0" height="20.0"/>
+    </Component>
+    <Component type="ScriptComboBox" id="cmbZoom" x="260.0" y="60.0" max="7"
+               parentComponent="pnlSettings" height="25.0" items="50%&#10;75%&#10;100%&#10;125%&#10;150%&#10;175%&#10;200%&#10;"
+               fontName="Roboto-Medium" defaultValue="3.0" width="200.0"/>
+    <Component type="ScriptPanel" id="pnlSettingsZoom" x="115.0" y="60.0" parentComponent="pnlSettings"
+               width="130.0" height="25.0" text="Zoom factor"/>
+  </Component>
+</ContentProperties>

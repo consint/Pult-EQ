@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Network ID="pultmidside" Version="0.0.0" AllowCompilation="1">
+  <Node FactoryPath="container.chain" ID="pultmidside" Bypassed="0" Name="pultmidside"
+        ShowParameters="1">
+    <Nodes>
+      <Node ID="mid_side1" FactoryPath="container.chain" Bypassed="0" Name="mid_side">
+        <Nodes>
+          <Node ID="decoder" FactoryPath="routing.ms_decode" Bypassed="0" Name="decoder">
+            <Parameters/>
+          </Node>
+          <Node ID="ms_splitter" FactoryPath="container.multi" Bypassed="0" Name="ms_splitter">
+            <Nodes>
+              <Node ID="mid_chain" FactoryPath="container.chain" Bypassed="0" Name="mid_chain">
+                <Nodes>
+                  <Node ID="pultec_mono" FactoryPath="project.pultec_mono" Bypassed="0"
+                        Name="pultec_mono">
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="20.0" StepSize="1.0" ID="BOOSTLow" Automated="1"
+                                 SkewFactor="0.8"/>
+                      <Parameter MinValue="0.0" MaxValue="130.0" StepSize="1.0" ID="ATTENLow"
+                                 Automated="1" SkewFactor="3.5"/>
+                      <Parameter MinValue="0.0" MaxValue="3.0" StepSize="1.0" ID="CPSLow" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="150.0" StepSize="1.0" ID="ADJUST" Automated="1"
+                                 SkewFactor="4"/>
+                      <Parameter MinValue="0.0" MaxValue="93.0" StepSize="1.0" ID="BOOSTHi" Automated="1"
+                                 SkewFactor="5"/>
+                      <Parameter MinValue="0.0" MaxValue="30.0" StepSize="1.0" ID="ATTENHi" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="CPSHi" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="HI-CUT F" Automated="1"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+              <Node ID="side_chain" FactoryPath="container.chain" Bypassed="0" Name="side_chain">
+                <Nodes>
+                  <Node ID="pultec_mono1" FactoryPath="project.pultec_mono" Bypassed="0"
+                        Name="pultec_mono1">
+                    <Parameters>
+                      <Parameter MinValue="0.0" MaxValue="20.0" StepSize="1.0" ID="BOOSTLow" Automated="1"
+                                 SkewFactor="0.8"/>
+                      <Parameter MinValue="0.0" MaxValue="130.0" StepSize="1.0" ID="ATTENLow"
+                                 Automated="1" SkewFactor="3.5"/>
+                      <Parameter MinValue="0.0" MaxValue="3.0" StepSize="1.0" ID="CPSLow" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="150.0" StepSize="1.0" ID="ADJUST" Automated="1"
+                                 SkewFactor="4"/>
+                      <Parameter MinValue="0.0" MaxValue="93.0" StepSize="1.0" ID="BOOSTHi" Automated="1"
+                                 SkewFactor="5"/>
+                      <Parameter MinValue="0.0" MaxValue="30.0" StepSize="1.0" ID="ATTENHi" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="6.0" StepSize="1.0" ID="CPSHi" Automated="1"/>
+                      <Parameter MinValue="0.0" MaxValue="2.0" StepSize="1.0" ID="HI-CUT F" Automated="1"/>
+                    </Parameters>
+                  </Node>
+                </Nodes>
+                <Parameters/>
+              </Node>
+            </Nodes>
+            <Parameters/>
+          </Node>
+          <Node ID="encoder" FactoryPath="routing.ms_encode" Bypassed="0" Name="encoder">
+            <Parameters/>
+          </Node>
+        </Nodes>
+        <Parameters/>
+      </Node>
+      <Node ID="inv" FactoryPath="math.inv" Bypassed="0" Name="inv">
+        <Parameters>
+          <Parameter MinValue="0.0" MaxValue="1.0" ID="Value" Value="0.0"/>
+        </Parameters>
+      </Node>
+      <Node ID="gain" FactoryPath="core.gain" Bypassed="0" Name="gain">
+        <Parameters>
+          <Parameter MinValue="-100.0" MaxValue="5.0" StepSize="0.1000000014901161"
+                     SkewFactor="5.422270774841309" ID="Gain" Value="0.6"/>
+          <Parameter MinValue="0.0" MaxValue="1000.0" StepSize="0.1000000014901161"
+                     SkewFactor="0.3010300099849701" ID="Smoothing" Value="20.0"/>
+          <Parameter MinValue="-100.0" MaxValue="0.0" StepSize="0.1000000014901161"
+                     SkewFactor="5.422270774841309" ID="ResetValue" Value="0.0"/>
+        </Parameters>
+      </Node>
+    </Nodes>
+    <Parameters>
+      <Parameter ID="midBoostLow" MinValue="0.0" MaxValue="20.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono" ParameterId="BOOSTLow"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="midAttenLow" MinValue="0.0" MaxValue="130.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono" ParameterId="ATTENLow"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="midCPSLow" MinValue="0.0" MaxValue="3.0" StepSize="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono" ParameterId="CPSLow"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="midAdjust" MinValue="0.0" MaxValue="150.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono" ParameterId="ADJUST"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="midBoostHi" MinValue="0.0" MaxValue="93.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono" ParameterId="BOOSTHi"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="midAttenHi" MinValue="0.0" MaxValue="30.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono" ParameterId="ATTENHi"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="midCPSHi" MinValue="0.0" MaxValue="6.0" StepSize="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono" ParameterId="CPSHi"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="midHiCutF" MinValue="0.0" MaxValue="2.0" StepSize="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono" ParameterId="HI-CUT F"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="sideBoostLow" MinValue="0.0" MaxValue="20.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono1" ParameterId="BOOSTLow"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="sideAttenLow" MinValue="0.0" MaxValue="130.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono1" ParameterId="ATTENLow"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="sideCPSLow" MinValue="0.0" MaxValue="3.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono1" ParameterId="CPSLow"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="sideAdjust" MinValue="0.0" MaxValue="150.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono1" ParameterId="ADJUST"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="sideBoostHi" MinValue="0.0" MaxValue="93.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono1" ParameterId="BOOSTHi"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="sideAttenHi" MinValue="0.0" MaxValue="30.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono1" ParameterId="ATTENHi"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="sideCPSHi" MinValue="0.0" MaxValue="6.0" StepSize="1.0" Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono1" ParameterId="CPSHi"/>
+        </Connections>
+      </Parameter>
+      <Parameter ID="sideHiCutF" MinValue="0.0" MaxValue="2.0" StepSize="1.0"
+                 Value="1.0">
+        <Connections>
+          <Connection NodeId="pultec_mono1" ParameterId="HI-CUT F"/>
+        </Connections>
+      </Parameter>
+    </Parameters>
+  </Node>
+</Network>
