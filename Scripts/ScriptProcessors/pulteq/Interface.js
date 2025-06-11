@@ -643,7 +643,7 @@ Content.getComponent("btnLinkKofi").setControlCallback(onbtnLinkKofiControl);
 // ##############
 
 // Drive
-const var comp = [-0.1, -0.1, -0.15, -0.2, -0.3, -0.4, -0.55, -0.85, -1.8, -2.9];
+const var comp = [-0.37, -0.45, -0.54, -0.66, -0.81, -1.02, -1.32, -1.79, -2.6, -4.15];
 
 inline function onknbDriveControl(component, value)
 {

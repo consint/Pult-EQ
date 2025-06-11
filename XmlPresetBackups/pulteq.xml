@@ -177,7 +177,7 @@
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
         </Processor>
         <Processor Type="Hardcoded Master FX" ID="hmfxSaturation" Bypassed="0" Network="saturation"
-                   Oversampling="0.0" Tube="0.2000000029802322" Gain="-0.1500000059604645"
+                   Oversampling="0.0" Tube="0.2000000029802322" Gain="-0.5400000214576721"
                    Filter="1.0">
           <ChildProcessors>
             <Processor Type="ModulatorChain" ID="P1 Modulation" Bypassed="0" Intensity="1.0">
