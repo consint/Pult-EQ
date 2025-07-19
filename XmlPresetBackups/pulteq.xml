@@ -31,7 +31,7 @@
             <Control type="ScriptButton" id="btnFreqLow1" value="0.0"/>
             <Control type="ScriptButton" id="btnFreqLow2" value="0.0"/>
             <Control type="ScriptButton" id="btnFreqLow3" value="0.0"/>
-            <Control type="ScriptSlider" id="knbHightFreq" value="0.0"/>
+            <Control type="ScriptSlider" id="knbHightFreq" value="0"/>
             <Control type="ScriptButton" id="btnFreqHight0" value="0.0"/>
             <Control type="ScriptButton" id="btnFreqHight1" value="0.0"/>
             <Control type="ScriptButton" id="btnFreqHight2" value="0.0"/>
@@ -218,6 +218,23 @@
             </Processor>
           </ChildProcessors>
           <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+        </Processor>
+        <Processor Type="ScriptFX" ID="ScriptFX1" Bypassed="0">
+          <ChildProcessors/>
+          <RoutingMatrix NumSourceChannels="2" Channel0="0" Send0="-1" Channel1="1" Send1="-1"/>
+          <Content/>
+          <Networks>
+            <Network ID="internal_dsp" Version="0.0.0">
+              <Node FactoryPath="container.chain" ID="internal_dsp" Bypassed="0"
+                    Name="internal_dsp">
+                <Nodes/>
+                <Parameters/>
+              </Node>
+            </Network>
+          </Networks>
+          <UIData>
+            <ContentProperties DeviceType="Desktop"/>
+          </UIData>
         </Processor>
       </ChildProcessors>
     </Processor>

@@ -5,10 +5,10 @@ Creator: Consistent Interruption
 License: GPLv3
 
 https://www.consint.net
-https://github.com/consint
+https://github.com/consint/Pult-EQ
 
 Created with Hise (https://hise.dev/) 
-The Background is based on a SVG background from https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/
+The background is based on a SVG background from https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/
 */
 
 Content.makeFrontInterface(640, 330);
@@ -123,7 +123,7 @@ const var paintGainBack = function(g)
 	g.setFont("Roboto-Medium", 13);
 	g.setColour(Colours.withAlpha(textCol, alpha));
 	g.drawAlignedText("Low Frequency", [31, 155, 127, 25], "centred");
-	g.drawAlignedText("Hight Frequency", [236, 155, 210, 25], "centred");
+	g.drawAlignedText("High Frequency", [236, 155, 210, 25], "centred");
 	g.drawAlignedText("Atten Frequency", [479, 155, 132, 25], "centred");
 };
 
