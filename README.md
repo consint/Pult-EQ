@@ -50,6 +50,16 @@ Sets the size of the UI.
 The ‘Polyphase’ filter has a low latency but some phase distortion in the high frequencies. The ‘FIR’ filter is phase linear but has a higher latency.
 
 ## How to compile
+1. Install or compile [Faust](https://github.com/grame-cncm/faust) > 2.74.6
+2. Compile [Hise](https://github.com/christophhart/HISE) with Faust enabled (see https://forum.hise.audio/topic/6746/updated-build-instructions). For help you can watch the great videos by David Healey ([Linux](https://www.youtube.com/watch?v=rUuEoJk6FF8), [Windows](https://www.youtube.com/watch?v=D3kthNOQ9_s), [MacOS](https://www.youtube.com/watch?v=zeLeCSNh0XM)).
+3. Clone this repository or download the Pult EQ source code.
+4. Open Hise, select ‘File -> Load Project’ and select the Pult EQ folder.
+5. Go to ‘Export’ and select ‘Compile DSP Networks as dll’. On Windows this will compile the DSP Networks. On Linux you have to execute the file ‘.../Pult EQ/DspNetworks/Binaries/batchCompileLinux.sh’ in the terminal.
+6. Restart Hise and load the file ‘pulteq.xml’.
+7. Select ‘Export -> Export as FX plugin’. 
+8. On Windows this will compile the Plugin. On Linux you have to execute the file ‘.../Pult EQ/Binaries/batchCompileLinux.sh’ in the terminal.
+
+If you need help you can ask me or have a look at the great [Hise forum](https://forum.hise.audio/).
 
 ## Credits
 Many thanks to Christoph Hart for making [Hise](https://github.com/christophhart/HISE). Thanks to David Healey for the great [Hise tutorials](https://www.youtube.com/@DHealey/featured). Thanks to the whole [Hise forum](https://forum.hise.audio/) for the friendly interaction and the great mutual help and support.
