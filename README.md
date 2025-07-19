@@ -7,7 +7,7 @@ Pult EQ is based on the Pultec EQ example of the Wave Digital Filter model libra
 
 ## How to install
 1. Unzip the downloaded file.
-2. Copy the entire ‘Tumult.vst3’ or ‘Tumult’ folder into the vst folder of your operating system. For Linux, this is the .vst3 folder in the home directory. For Windows, this is in ‘C:\\Program Files\\Common Files\\VST3’.
+2. Copy the entire ‘Pult EQ.vst3’ or ‘Pult EQ’ folder into the vst folder of your operating system. For Linux, this is the .vst3 folder in the home directory. For Windows, this is in ‘C:\\Program Files\\Common Files\\VST3’.
 
 ## How to use
 ### General
