@@ -54,8 +54,8 @@ The ‘Polyphase’ filter has a low latency but some phase distortion in the hi
 ## Credits
 Many thanks to Christoph Hart for making [Hise](https://github.com/christophhart/HISE). Thanks to David Healey for the great [Hise tutorials](https://www.youtube.com/@DHealey/featured). Thanks to the whole [Hise forum](https://forum.hise.audio/) for the friendly interaction and the great mutual help and support.
 
-Thanks to the whole FAUST team for making [FAUST](github.com/grame-cncm/faust) and to [droosenb](https://github.com/droosenb) for adding the [wdmodels library](https://faustlibraries.grame.fr/libs/wdmodels/) and the Pultec example.
+Thanks to the whole FAUST team for making [FAUST](https://github.com/grame-cncm/faust) and to [droosenb](https://github.com/droosenb) for adding the [wdmodels library](https://faustlibraries.grame.fr/libs/wdmodels/) and the Pultec example.
 
 Thanks to [Chris from Airwindows](https://github.com/airwindows/airwindows) for [Tube2](https://www.airwindows.com/tube2/) and all the other great algorithms.
 
-The Background is based on a SVG background from [svgbackgrounds.com](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/)
+The plugin background is based on a SVG background from [svgbackgrounds.com](https://www.svgbackgrounds.com/set/free-svg-backgrounds-and-patterns/)
