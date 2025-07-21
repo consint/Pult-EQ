@@ -13,18 +13,20 @@ Pult EQ is based on the Pultec EQ example of the Wave Digital Filter model libra
 ### General
 Knobs can be adjusted by dragging. If you hold Ctrl or Alt while dragging, the knob can be fine-tuned. If you press Shift while clicking on a knob, you can enter a value as text.
 
-### Interface
+### Header
 #### Bypass
 Bypass the Plugin.
 
 #### Settings
 The ‘ci‘ logo or the settings icon shows and closes the settings.
 
+### General controls
+
 #### In
 Adjusts the input gain.
 
 #### EQ
-The EQ can be switched off here, set to stereo mode or to mid and side mode. If “Mid” is selected, the mid signal can be processed. If “Side” is selected, the side signal can be processed.
+The EQ can be switched off here, set to stereo mode or to mid and side mode. If “Mid” is selected, the mid signal can be edited. If “Side” is selected, the side signal can be edited.
 
 #### Drive
 Sets the level of saturation. At 0, the saturation is completely switched off.
@@ -35,7 +37,7 @@ Adjusts the oversampling.
 #### Out
 Adjusts the output gain.
 
-#### EQ
+### EQ controls
 The EQ is basically divided into two areas: the low frequencies and the high frequencies.
 
 The left ‘Boost’ and ‘Atten’ knobs and the ‘Low Frequency’ selection are responsible for the low frequencies. ‘Low Frequency’ can be used to set the effective range of the low frequency band, even if this extends far beyond the specified value. The low boost knob can be used to boost the low frequencies. The low Atten knob can be used to reduce the low frequencies. If the low frequencies are boosted and attenuated at the same time, interesting EQ curves are created which make up the so-called Pultec EQ trick.
@@ -47,7 +49,7 @@ All other knobs are used for the high frequencies. With ‘High Frequency’ and
 Sets the size of the UI.
 
 #### Oversampling Filter
-The ‘Polyphase’ filter has a low latency but some phase distortion in the high frequencies. The ‘FIR’ filter is phase linear but has a higher latency.
+Here you can set which filter type is used for oversampling. The ‘Polyphase’ filter has a low latency but some phase distortion in the high frequencies. The ‘FIR’ filter is phase linear but has a higher latency.
 
 ## How to compile
 1. Install or compile [Faust](https://github.com/grame-cncm/faust) > 2.74.6
