@@ -3,6 +3,8 @@ Pult EQ is a free and open source Pultec style tube EQ VST3 plugin (64bit) for L
 
 Pult EQ is based on the Pultec EQ example of the Wave Digital Filter model library in FAUST and on the airwindows Tube2 saturation.
 
+Download the latest version here: [https://github.com/consint/Pult-EQ/releases](https://github.com/consint/Pult-EQ/releases)
+
 ![Preview of the Pult EQ interface](pulteq.png)
 
 ## How to install
